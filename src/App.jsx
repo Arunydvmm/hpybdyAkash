@@ -20,7 +20,7 @@ export default function App() {
   const [currentScene, setCurrentScene] = useState(0)
   const [isMuted, setIsMuted] = useState(false)
   const [photos, setPhotos] = useState([])
-  const [theme, setTheme] = useState('neon')
+  const [theme, setTheme] = useState('forest')
 
   const scenes = [
     Scene1ClassifiedAccess,
