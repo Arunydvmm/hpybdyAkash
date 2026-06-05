@@ -6,11 +6,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        neon: {
-          blue: '#00d4ff',
-          gold: '#ffd700',
-          purple: '#9d00ff',
-          cyan: '#00f0ff',
+        love: {
+          primary: '#ff1493',      // Deep pink
+          secondary: '#ff69b4',    // Hot pink
+          light: '#ffb6c1',        // Light pink
+          dark: '#c71585',         // Medium violet red
+          accent: '#ff6b9d',       // Rose pink
         }
       },
       fontFamily: {
@@ -18,11 +19,11 @@ export default {
       },
       keyframes: {
         glitch: {
-          '0%': { textShadow: '-2px 0 #00d4ff, 2px 0 #ff00ff' },
-          '25%': { textShadow: '2px 0 #00d4ff, -2px 0 #ff00ff' },
-          '50%': { textShadow: '-1px 0 #00d4ff, 1px 0 #ff00ff' },
-          '75%': { textShadow: '1px 0 #00d4ff, -1px 0 #ff00ff' },
-          '100%': { textShadow: '-2px 0 #00d4ff, 2px 0 #ff00ff' },
+          '0%': { textShadow: '-2px 0 #ff1493, 2px 0 #ff69b4' },
+          '25%': { textShadow: '2px 0 #ff1493, -2px 0 #ff69b4' },
+          '50%': { textShadow: '-1px 0 #ff1493, 1px 0 #ff69b4' },
+          '75%': { textShadow: '1px 0 #ff1493, -1px 0 #ff69b4' },
+          '100%': { textShadow: '-2px 0 #ff1493, 2px 0 #ff69b4' },
         },
         typewriter: {
           '0%': { width: '0' },
@@ -33,8 +34,8 @@ export default {
           '50%': { transform: 'translateY(-20px)' }
         },
         pulse_neon: {
-          '0%, 100%': { boxShadow: '0 0 5px rgba(0, 212, 255, 0.5)' },
-          '50%': { boxShadow: '0 0 20px rgba(0, 212, 255, 0.8)' }
+          '0%, 100%': { boxShadow: '0 0 5px rgba(255, 20, 147, 0.5)' },
+          '50%': { boxShadow: '0 0 20px rgba(255, 20, 147, 0.8)' }
         }
       },
       animation: {

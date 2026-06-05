@@ -1,0 +1,102 @@
+/* Love Theme - Override all colors */
+
+:root {
+  --primary-pink: #ff1493;
+  --secondary-pink: #ff69b4;
+  --light-pink: #ffb6c1;
+  --dark-pink: #c71585;
+  --accent-pink: #ff6b9d;
+}
+
+/* Replace all neon-blue with primary pink */
+.text-neon-blue,
+.border-neon-blue,
+.bg-neon-blue,
+[style*="neon-blue"] {
+  --tw-text-opacity: 1;
+  color: rgb(255 20 147 / var(--tw-text-opacity)) !important;
+  border-color: rgb(255 20 147 / var(--tw-border-opacity)) !important;
+  background-color: rgb(255 20 147 / var(--tw-bg-opacity)) !important;
+}
+
+/* Replace neon-gold with secondary pink */
+.text-neon-gold,
+.border-neon-gold,
+.bg-neon-gold,
+[style*="neon-gold"] {
+  --tw-text-opacity: 1;
+  color: rgb(255 105 180 / var(--tw-text-opacity)) !important;
+  border-color: rgb(255 105 180 / var(--tw-border-opacity)) !important;
+  background-color: rgb(255 105 180 / var(--tw-bg-opacity)) !important;
+}
+
+/* Replace neon-purple with accent pink */
+.text-neon-purple,
+.border-neon-purple,
+.bg-neon-purple,
+[style*="neon-purple"] {
+  --tw-text-opacity: 1;
+  color: rgb(255 105 180 / var(--tw-text-opacity)) !important;
+  border-color: rgb(255 105 180 / var(--tw-border-opacity)) !important;
+  background-color: rgb(255 105 180 / var(--tw-bg-opacity)) !important;
+}
+
+/* Love theme glows */
+.neon-glow {
+  box-shadow: 0 0 10px rgba(255, 20, 147, 0.5), 0 0 20px rgba(255, 20, 147, 0.3) !important;
+}
+
+.neon-glow-gold {
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5), 0 0 20px rgba(255, 105, 180, 0.3) !important;
+}
+
+.neon-glow-purple {
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5), 0 0 20px rgba(255, 105, 180, 0.3) !important;
+}
+
+/* Love theme text glows */
+.text-glow {
+  text-shadow: 0 0 10px rgba(255, 20, 147, 0.8), 0 0 20px rgba(255, 20, 147, 0.4) !important;
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 10px rgba(255, 105, 180, 0.8), 0 0 20px rgba(255, 105, 180, 0.4) !important;
+}
+
+/* Pink gradients */
+.from-neon-blue {
+  --tw-gradient-from: #ff1493 !important;
+  --tw-gradient-to: rgb(255 20 147 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-neon-blue {
+  --tw-gradient-to: #ff1493 !important;
+}
+
+.from-neon-gold {
+  --tw-gradient-from: #ff69b4 !important;
+  --tw-gradient-to: rgb(255 105 180 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-neon-gold {
+  --tw-gradient-to: #ff69b4 !important;
+}
+
+.from-neon-purple {
+  --tw-gradient-from: #ff69b4 !important;
+  --tw-gradient-to: rgb(255 105 180 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-neon-purple {
+  --tw-gradient-to: #ff69b4 !important;
+}
+
+/* Love theme glass */
+.glass-dark {
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 20, 147, 0.3) !important;
+}

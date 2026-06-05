@@ -4,7 +4,6 @@ import Scene1ClassifiedAccess from './scenes/Scene1ClassifiedAccess'
 import Scene2DigitalPassport from './scenes/Scene2DigitalPassport'
 import Scene3MemoryArchive from './scenes/Scene3MemoryArchive'
 import Scene4PhotoGalaxy from './scenes/Scene4PhotoGalaxy'
-import Scene5AIAnalyzer from './scenes/Scene5AIAnalyzer'
 import Scene6RoastZone from './scenes/Scene6RoastZone'
 import Scene7EasterEggs from './scenes/Scene7EasterEggs'
 import Scene8MemoryLetter from './scenes/Scene8MemoryLetter'
@@ -19,15 +18,24 @@ import ThemeSelector from './components/ThemeSelector'
 export default function App() {
   const [currentScene, setCurrentScene] = useState(0)
   const [isMuted, setIsMuted] = useState(false)
-  const [photos, setPhotos] = useState([])
-  const [theme, setTheme] = useState('forest')
+  const [photos, setPhotos] = useState([
+    // Sample photos - replace with actual uploaded photos
+    require('./assets/photo1.jpg'),
+    require('./assets/photo2.jpg'),
+    require('./assets/photo3.jpg'),
+    require('./assets/photo4.jpg'),
+    require('./assets/photo5.jpg'),
+    require('./assets/photo6.jpg'),
+    require('./assets/photo7.jpg'),
+    require('./assets/photo8.jpg'),
+  ])
+  const [theme, setTheme] = useState('love')
 
   const scenes = [
     Scene1ClassifiedAccess,
     Scene2DigitalPassport,
     Scene3MemoryArchive,
     Scene4PhotoGalaxy,
-    Scene5AIAnalyzer,
     Scene6RoastZone,
     Scene7EasterEggs,
     Scene8MemoryLetter,
@@ -79,7 +87,7 @@ export default function App() {
       <ThemeSelector theme={theme} setTheme={setTheme} />
 
       {/* Scene Counter */}
-      <div className="fixed bottom-4 left-4 text-neon-blue text-xs font-mono opacity-50 pointer-events-none">
+      <div className="fixed bottom-4 left-4 text-pink-400 text-xs font-mono opacity-50 pointer-events-none">
         SCENE {currentScene + 1}/{scenes.length}
       </div>
 
