@@ -18,17 +18,7 @@ import ThemeSelector from './components/ThemeSelector'
 export default function App() {
   const [currentScene, setCurrentScene] = useState(0)
   const [isMuted, setIsMuted] = useState(false)
-  const [photos, setPhotos] = useState([
-    // Sample photos - replace with actual uploaded photos
-    require('./assets/photo1.jpg'),
-    require('./assets/photo2.jpg'),
-    require('./assets/photo3.jpg'),
-    require('./assets/photo4.jpg'),
-    require('./assets/photo5.jpg'),
-    require('./assets/photo6.jpg'),
-    require('./assets/photo7.jpg'),
-    require('./assets/photo8.jpg'),
-  ])
+  const [photos, setPhotos] = useState([])
   const [theme, setTheme] = useState('love')
 
   const scenes = [
