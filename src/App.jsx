@@ -14,12 +14,22 @@ import Scene12FinalMessage from './scenes/Scene12FinalMessage'
 import Scene13GiftBox from './scenes/Scene13GiftBox'
 import AudioController from './components/AudioController'
 import ThemeSelector from './components/ThemeSelector'
+import { preloadedPhotos } from './photosData'
 
 export default function App() {
   const [currentScene, setCurrentScene] = useState(0)
   const [isMuted, setIsMuted] = useState(false)
   const [photos, setPhotos] = useState([])
   const [theme, setTheme] = useState('love')
+
+  // Load photos one by one when app mounts
+  useEffect(() => {
+    preloadedPhotos.forEach((photo, index) => {
+      setTimeout(() => {
+        setPhotos(prev => [...prev, photo])
+      }, index * 500) // 500ms delay between each photo
+    })
+  }, [])
 
   const scenes = [
     Scene1ClassifiedAccess,
