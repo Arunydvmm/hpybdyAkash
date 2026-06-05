@@ -4,27 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Love Theme */
-@import './love-theme.css';
-
-/* Theme Variables */
-:root {
-  /* Neon Dark Theme */
-  --color-primary-neon: #00d4ff;
-  --color-secondary-neon: #ffd700;
-  --color-accent-neon: #9d00ff;
-  
-  /* Forest Green Theme (Low Theme) */
-  --color-primary-forest: #4ade80;
-  --color-secondary-forest: #86efac;
-  --color-accent-forest: #22c55e;
-  
-  /* Ocean Theme */
-  --color-primary-ocean: #0ea5e9;
-  --color-secondary-ocean: #06b6d4;
-  --color-accent-ocean: #0284c7;
-}
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,16 +23,16 @@ html, body, #root {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 212, 255, 0.1);
+  background: rgba(255, 20, 147, 0.1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 212, 255, 0.5);
+  background: rgba(255, 20, 147, 0.5);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 212, 255, 0.7);
+  background: rgba(255, 20, 147, 0.7);
 }
 
 /* Glassmorphism */
@@ -69,30 +48,88 @@ html, body, #root {
   border: 1px solid rgba(255, 20, 147, 0.3);
 }
 
-/* Neon glow */
+/* LOVE THEME - All Pink Colors */
+
+/* Text colors - Pink */
+.text-neon-blue {
+  color: #ff1493 !important;
+}
+
+.text-neon-gold {
+  color: #ff69b4 !important;
+}
+
+.text-neon-purple {
+  color: #ff69b4 !important;
+}
+
+/* Border colors - Pink */
+.border-neon-blue {
+  border-color: #ff1493 !important;
+}
+
+.border-neon-gold {
+  border-color: #ff69b4 !important;
+}
+
+.border-neon-purple {
+  border-color: #ff69b4 !important;
+}
+
+/* Gradient colors - Pink */
+.from-neon-blue {
+  --tw-gradient-from: #ff1493 !important;
+}
+
+.to-neon-blue {
+  --tw-gradient-to: #ff1493 !important;
+}
+
+.from-neon-gold {
+  --tw-gradient-from: #ff69b4 !important;
+}
+
+.to-neon-gold {
+  --tw-gradient-to: #ff69b4 !important;
+}
+
+.from-neon-purple {
+  --tw-gradient-from: #ff69b4 !important;
+}
+
+.to-neon-purple {
+  --tw-gradient-to: #ff69b4 !important;
+}
+
+/* Via colors */
+.via-neon-blue {
+  --tw-gradient-via: #ff1493 !important;
+}
+
+/* Neon glow - Pink */
 .neon-glow {
-  box-shadow: 0 0 10px rgba(255, 20, 147, 0.5), 0 0 20px rgba(255, 20, 147, 0.3);
+  box-shadow: 0 0 10px rgba(255, 20, 147, 0.5), 0 0 20px rgba(255, 20, 147, 0.3) !important;
 }
 
 .neon-glow-gold {
-  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5), 0 0 20px rgba(255, 105, 180, 0.3);
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5), 0 0 20px rgba(255, 105, 180, 0.3) !important;
 }
 
 .neon-glow-purple {
-  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5), 0 0 20px rgba(255, 105, 180, 0.3);
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5), 0 0 20px rgba(255, 105, 180, 0.3) !important;
 }
 
-/* Text shadows */
+/* Text shadows - Pink */
 .text-glow {
-  text-shadow: 0 0 10px rgba(255, 20, 147, 0.8), 0 0 20px rgba(255, 20, 147, 0.4);
+  text-shadow: 0 0 10px rgba(255, 20, 147, 0.8), 0 0 20px rgba(255, 20, 147, 0.4) !important;
 }
 
 .text-glow-gold {
-  text-shadow: 0 0 10px rgba(255, 105, 180, 0.8), 0 0 20px rgba(255, 105, 180, 0.4);
+  text-shadow: 0 0 10px rgba(255, 105, 180, 0.8), 0 0 20px rgba(255, 105, 180, 0.4) !important;
 }
 
 .text-glow-forest {
-  text-shadow: 0 0 10px rgba(255, 20, 147, 0.8), 0 0 20px rgba(255, 20, 147, 0.4);
+  text-shadow: 0 0 10px rgba(255, 20, 147, 0.8), 0 0 20px rgba(255, 20, 147, 0.4) !important;
 }
 
 /* Screen flicker */
