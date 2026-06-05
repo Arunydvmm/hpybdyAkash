@@ -92,12 +92,24 @@ export default function Scene8MemoryLetter({ onNext, isMuted }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 4.5 }}
+          >
+            <TypewriterText
+              text="You make every moment worth remembering. Every laugh, every roast, every shared memory—it all matters."
+              speed={40}
+              className="text-lg text-neon-gold"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 6.5 }}
             onAnimationComplete={() => setShowEnd(true)}
           >
             <TypewriterText
-              text="I want to thank you for being an incredible part of the story."
+              text="19 years of you being the friend everyone needs but doesn't deserve."
               speed={40}
-              className="text-lg text-neon-gold"
+              className="text-lg text-neon-purple"
             />
           </motion.div>
         </motion.div>

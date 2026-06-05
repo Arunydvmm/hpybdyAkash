@@ -14,11 +14,13 @@ import Scene11PhotoMosaic from './scenes/Scene11PhotoMosaic'
 import Scene12FinalMessage from './scenes/Scene12FinalMessage'
 import Scene13GiftBox from './scenes/Scene13GiftBox'
 import AudioController from './components/AudioController'
+import ThemeSelector from './components/ThemeSelector'
 
 export default function App() {
   const [currentScene, setCurrentScene] = useState(0)
   const [isMuted, setIsMuted] = useState(false)
   const [photos, setPhotos] = useState([])
+  const [theme, setTheme] = useState('neon')
 
   const scenes = [
     Scene1ClassifiedAccess,
@@ -72,6 +74,9 @@ export default function App() {
 
       {/* Audio Controller */}
       <AudioController isMuted={isMuted} setIsMuted={setIsMuted} />
+
+      {/* Theme Selector */}
+      <ThemeSelector theme={theme} setTheme={setTheme} />
 
       {/* Scene Counter */}
       <div className="fixed bottom-4 left-4 text-neon-blue text-xs font-mono opacity-50 pointer-events-none">

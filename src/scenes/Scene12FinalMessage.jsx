@@ -106,9 +106,13 @@ export default function Scene12FinalMessage({ onNext }) {
             <p className="text-neon-purple text-glow font-mono text-sm leading-relaxed">
               You've unlocked a new chapter. This is your moment.<br/>
               <br/>
-              19 is just the beginning. More stories to write. More memories to create. More adventures waiting.<br/>
+              19 years down. A lifetime of adventures ahead.<br/>
               <br/>
-              Thank you for being YOU.
+              Every photo, every roast, every laugh—they're proof that life with you is never boring. You're the chaotic good our story needed.<br/>
+              <br/>
+              So here's to you: the friend who makes everything better just by showing up. The one we roast because we love. The legend everyone knows they can count on.<br/>
+              <br/>
+              Thank you for being YOU. The world needed exactly this version.
             </p>
           </motion.div>
         )}

@@ -3,14 +3,14 @@ import { motion } from 'framer-motion'
 
 export default function Scene6RoastZone({ onNext }) {
   const roasts = [
-    'Subject claims innocence. Evidence says otherwise.',
-    'Reply speed increases under special circumstances.',
-    'Professional overthinker detected.',
-    'Certified excuse generator.',
-    'Study mode loading... error 404: motivation not found.',
-    'Main character energy (sometimes).',
-    'Selective availability expert.',
-    'Mystery master (where are you?)',
+    '📸 Photo 1: "That smile could sell ice to an Eskimo... if you had confidence!"',
+    '📸 Photo 2: "Proof that even legends have awkward phases (permanent phase detected)."',
+    '📸 Photo 3: "Main character? More like side character trying hard!"',
+    '📸 Photo 4: "Professional fake laugh captured in HD."',
+    '📸 Photo 5: "Attitude: 100% | Actual achievements: pending review..."',
+    '📸 Photo 6: "Peak performance: Overthinking and nothing else."',
+    '📸 Photo 7: "Living your best life while struggling internally. Relatable!"',
+    '📸 Photo 8: "Final proof: You\'re chaotic good. The chaos? Definitely good. You? TBD."',
   ]
 
   const [activeRoast, setActiveRoast] = useState(0)

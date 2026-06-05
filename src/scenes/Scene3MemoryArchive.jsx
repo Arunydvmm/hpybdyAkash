@@ -5,12 +5,14 @@ export default function Scene3MemoryArchive({ onNext, photos, setPhotos }) {
   const [revealedCards, setRevealedCards] = useState({})
 
   const memoryMessages = [
-    'Rare specimen located.',
-    'Confidence level detected.',
-    'Main character energy found.',
-    'Evidence archived.',
-    'Legend status confirmed.',
-    'Memories locked in time.',
+    '📸 Photo 1: "The legendary smile that breaks the internet"',
+    '🎭 Photo 2: "Attitude mode: ACTIVATED | IQ mode: Searching..."',
+    '✨ Photo 3: "Proof that you exist... barely!"',
+    '🔥 Photo 4: "Certified meme lord in action"',
+    '😎 Photo 5: "Main character vibes on main character budget"',
+    '🎪 Photo 6: "Professional overthinker caught in 4K"',
+    '🌟 Photo 7: "Living your best life (questionable choices included)"',
+    '💎 Photo 8: "Diamond in the rough... very rough"',
   ]
 
   const handlePhotoUpload = (e) => {
